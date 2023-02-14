@@ -1,0 +1,7 @@
+body article h2{
+    color:red;
+}
+
+body >ul >li{
+    color:blue
+}
