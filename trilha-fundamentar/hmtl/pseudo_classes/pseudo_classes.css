@@ -1,0 +1,36 @@
+
+
+ul li:first-child{
+    font-weight: bold;
+}
+
+article p:nth-of-type(1){
+    font-weight: bold;
+    color: blueviolet;
+}
+
+article p:nth-child(3){
+    font-weight: bold;
+    color: rgb(156, 226, 43);
+}
+
+ul li:nth-child(odd){
+  background-color: rgb(128, 128, 128);
+}
+
+ul li:nth-child(even){
+ color: rgb(207, 23, 192);
+}
+
+a:hover{
+    color: darkred;
+}
+
+
+input:focus {
+    border-color: rgb(183, 196, 10);
+   
+}
+input:disabled{
+    background-color: green;
+}

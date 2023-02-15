@@ -1,0 +1,12 @@
+li::before{
+    content: ">" ;
+}
+
+li::after{
+    content: "*" ;
+}
+
+
+article p:nth-of-type(2)::first-line{
+    font-weight: bold;
+}
