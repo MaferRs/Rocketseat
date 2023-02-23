@@ -83,3 +83,12 @@ button{
 .icon{
    width: 20%;
 }
+footer{ 
+    display: flex;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    margin-top: auto;
+
+}
