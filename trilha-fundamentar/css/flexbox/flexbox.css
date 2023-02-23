@@ -1,0 +1,69 @@
+/*.container {
+    display: flex;
+    border: 1px solid red;
+    height: 80vh;
+}
+.item{
+    background-color: gray;
+    border: 1px solid black;
+    flex:1
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 80vh;
+
+}
+
+.box{
+    display: flex;
+
+    border: 1px dashed red;
+    width: 160px;
+   
+}
+.box div {
+    flex-basis: 40px;
+    border: 1px solid;
+
+}
+
+.box div:nth-child(2),
+ .box div:nth-child(3)
+{
+    flex-shrink: 2;
+}
+
+*/
+
+
+.page{
+    border: 2px solid;
+    min-height: 100vh;
+
+    display: flex;
+}
+aside{
+    flex: 1;
+    background-color: lightgreen;
+}
+main{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+}
+main section:nth-child(1){
+  flex: 0 0 100px;
+    background-color: lightgoldenrodyellow;
+}
+main section:nth-child(2){
+    flex: 0 120px;
+    background-color: lightsalmon;
+}
+main section:nth-child(3){
+     flex: 1 0;
+    background-color: lightpink;
+}
