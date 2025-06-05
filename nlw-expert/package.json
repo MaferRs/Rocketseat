@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@types/dom-speech-recognition": "^0.0.4"
+  }
+}
