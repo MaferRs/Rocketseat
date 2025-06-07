@@ -1,0 +1,14 @@
+main {
+  display: flex;
+  gap: 2rem;
+
+  .button {
+    background-color: pink;
+    color: rgb(102, 18, 32);
+    border: none;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: medium;
+  }
+}
