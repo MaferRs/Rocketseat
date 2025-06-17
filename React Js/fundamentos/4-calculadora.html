@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <title>Rocketseat - React.js - Fundamentos</title>
+
+  <style type="text/tailwindcss">
+    :root{
+       --text: #EBEBEB;
+       --text-secondary: #6B6B6B;
+       --primary: #462878;
+       --background: #2D2A37;
+ 
+       --gradient: 180deg, 
+         rgba(0, 0, 0, 0.05) 0%, 
+         rgba(255, 255, 255, 0.05) 100%;
+ 
+       --gradient-hover: 180deg, 
+         rgba(0, 0, 0, 0.1) 0%, 
+         rgba(255, 255, 255, 0.1) 100%;
+ 
+       --shadow: 0px 11px 7px 0px rgba(0, 0, 0, 0.01), 
+         0px 7px 7px 0px rgba(0, 0, 0, 0.04), 
+         0px 4px 6px 0px rgba(0, 0, 0, 0.10), 
+         0px 2px 4px 0px rgba(0, 0, 0, 0.26), 
+         0px 0px 2px 0px rgba(0, 0, 0, 0.29), 
+         0px 2px 3px 0px rgba(255, 255, 255, 0.06) inset;
+ 
+       --font-sans: 'Rubik', sans-serif;
+     }
+   </style>
+</head>
+
+<body class="text-(--text) font-(--font-sans)">
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/babel">
+
+    const textVariante = {
+      default: 'text-xl',
+      muted: 'text-xl text-(--text--secondary)',
+      heading: 'text-2xl',
+      blast: 'text-3xl'
+    }
+
+    //componente
+
+
+    // componente de text com tag dinamica
+    function Text({ as = 'span', variant = ' default', classaName, children, ...props }) {
+      return (
+        React.createElement(
+          as,
+          {
+            classaName: `${textVariant[variant]}`, ...props
+          },
+          children
+        )
+      )
+    }
+
+    function Button({ variant = 'default', children, className, ...props }) {
+      return
+      <Text as='button' variant='heading'>{children}
+      </Text>
+    }
+
+    function App() {
+      return (
+        <main classaName='py-28 px-4'>
+          <Button>teste</Button>
+        </main>
+      )
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      <App />
+    )
+
+  </script>
+</body>
+
+</html>
