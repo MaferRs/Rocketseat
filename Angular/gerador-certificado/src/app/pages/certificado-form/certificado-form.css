@@ -72,6 +72,9 @@ label {
   border: 1px solid #3b5ac2;
   box-shadow: none;
 }
+.custom-input-group {
+  margin-bottom: 20px;
+}
 
 /*
 verifica se exite a classe com (input:focus) e aplica o estilo */
