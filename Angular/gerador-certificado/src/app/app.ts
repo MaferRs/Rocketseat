@@ -7,6 +7,7 @@ import { SecondaryButton } from './_components/secondary-button/secondary-button
 import { ItemCertificado } from './_components/item-certificado/item-certificado';
 import { BaseUi } from './_components/base-ui/base-ui';
 import { Certificados } from './pages/certificados/certificados';
+import { CertificadoForm } from './pages/certificado-form/certificado-form';
 
 // CommonModule permite usar diretivar como ngIf, ngFor, mas preciso ser importado para funcionar.
 
@@ -20,6 +21,7 @@ import { Certificados } from './pages/certificados/certificados';
     ItemCertificado,
     BaseUi,
     Certificados,
+    CertificadoForm,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
