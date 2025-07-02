@@ -1,30 +1,6 @@
-<app-navbar *ngIf="!exibeNavBar"></app-navbar>
-
-<!-- <app-base-ui>
-  <app-primary-button></app-primary-button>
-  <app-secondary-button></app-secondary-button>
-
-  <div class="container">
-    <app-item-certificado></app-item-certificado>
-  </div>
-
-</app-base-ui> -->
-
+<app-navbar></app-navbar>
 
 <app-base-ui>
-  <!-- <app-certificados></app-certificados> -->
-  <!-- <app-certificado-form></app-certificado-form> -->
-  <app-certificado></app-certificado>
+  <router-outlet></router-outlet>
+
 </app-base-ui>
-
-
-<!-- OBSERVAÇÕES -->
-
-<!-- não será inicializado -->
-<!-- @if(exibeNavBar){
-<app-navbar></app-navbar>
-} -->
-
-
-<!-- esconde, porém continua sendo inicializado -->
-<!-- <app-navbar [hidden]="!exibeNavBar"></app-navbar> -->
