@@ -97,6 +97,6 @@ verifica se exite a classe com (input:focus) e aplica o estilo */
   vertical-align: middle;
 }
 
-.custom-input-group:has(.error-message) > label {
+.text-danger-label {
   color: #d71d1d;
 }
