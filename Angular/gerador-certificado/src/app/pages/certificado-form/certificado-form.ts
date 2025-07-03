@@ -18,6 +18,10 @@ export class CertificadoForm {
   campoInvalido(control: NgModel) {
     return control.invalid && control.touched;
   }
+
+  formValido() {
+    return this.atividades.length > 0 && this.nome.length > 0;
+  }
 }
 
 // ngModel - facilita a sincronização automática do valor de um campo de formulário com uma variável, captura em tempo real os valores do input.

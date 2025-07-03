@@ -7,11 +7,14 @@
       <ul class="navbar-nav">
         <li class="nav-item d-flex align-items-center">
           <i class="ph ph-medal active"></i>
-          <a routerLink="/" class="nav-link active" href="">Lista de Certificados</a>
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link active"
+            href="">Lista
+            de Certificados</a>
         </li>
         <li class="nav-item d-flex align-items-center ms-3">
           <i class="ph ph-circles-three-plus"></i>
-          <a routerLink="/certificados/novo" class="nav-link " href="">Gerar Certificado</a>
+          <a routerLink="/certificados/novo" routerLinkActive="active" class="nav-link"
+            [routerLinkActiveOptions]="{exact: true}" href="">Gerar Certificado</a>
         </li>
       </ul>
     </div>
