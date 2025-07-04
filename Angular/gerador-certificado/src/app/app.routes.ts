@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { Certificados } from './pages/certificados/certificados';
 import { CertificadoForm } from './pages/certificado-form/certificado-form';
-import { Certificado } from './pages/certificado/certificado';
+import { CertificadoComponent } from './pages/certificado/certificado';
 
 export const routes: Routes = [
   {
@@ -16,6 +16,6 @@ export const routes: Routes = [
   },
   {
     path: 'certificados/:id',
-    component: Certificado,
+    component: CertificadoComponent,
   },
 ];

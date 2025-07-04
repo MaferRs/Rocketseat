@@ -25,12 +25,12 @@
     <div class="mb-3 d-flex align-items-end custom-input-group">
       <div class="flex-grow-1 me-2">
         <label for="atividade" class="form-label">Atividade</label>
-        <input #atividadeRef="ngModel" name="atividade" required [(ngModel)]="certificado.atividades" type="text"
+        <input #atividadeRef="ngModel" name="atividade" required [(ngModel)]="atividade" type="text"
           class="form-control custom-input" placeholder="Atividade exercida" id="atividade" />
 
       </div>
-      <app-secondary-button (click)="adicionarAtividade()" [disabled]="atividade.length == 0" [textoBotao]="'Adicionar'"
-        [phClass]="'ph ph-plus'"></app-secondary-button>
+      <app-secondary-button (click)="adicionarAtividade()" [disabled]="!atividade || atividade.length == 0"
+        [textoBotao]="'Adicionar'" [phClass]="'ph ph-plus'"></app-secondary-button>
     </div>
 
     <div class="atividade-group">
