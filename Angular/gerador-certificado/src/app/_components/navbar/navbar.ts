@@ -20,6 +20,6 @@ export class Navbar implements OnInit {
 
   //função isolada.
   mensagem() {
-    console.log('Meu componente navbar inicializou(dentro de uma função)');
+    // console.log('Meu componente navbar inicializou(dentro de uma função)');
   }
 }
