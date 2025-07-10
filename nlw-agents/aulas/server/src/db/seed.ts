@@ -4,7 +4,6 @@ import { schema } from './schema/index.ts';
 
 await reset(db, schema);
 
-//para popular o banco de dados
 await seed(db, schema).refine((f) => {
   return {
     rooms: {
@@ -13,6 +12,9 @@ await seed(db, schema).refine((f) => {
         name: f.companyName(),
         description: f.loremIpsum(),
       },
+    },
+    questions: {
+      count: 20,
     },
   };
 });
